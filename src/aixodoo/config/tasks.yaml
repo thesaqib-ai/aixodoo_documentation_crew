@@ -1,0 +1,123 @@
+requirement_analysis:
+  agent: requirement_analyst
+  description: >
+    Your task is to write a comprehensive document that outlines the objectives, scope, and detailed 
+    specifications for customizing and implementing an Odoo Studio-based solution. It serves as a 
+    blueprint for the project, detailing functional and non-functional requirements, business workflows, 
+    data needs, and integration points. This report is essential for guiding the development process and 
+    ensuring the successful delivery of a tailored Odoo solution that meets business goals.
+  expected_output: >
+    A comprehensive Requirements Report that contains:
+    1. Executive Summary
+       a. Objective: What the project aims to achieve.
+       b. Overview: Brief introduction to the business or organization and the problem being solved.
+       c. Expected Outcome: What the final system will deliver.
+    2. Project Scope
+       a. In-Scope: Features and functionalities to be implemented.
+       b. Out-of-Scope: Features explicitly excluded from the project.
+       c. Assumptions: Any assumptions made during the requirements gathering.
+    3. Stakeholders
+       a. List of stakeholders involved (e.g., project owner, end-users, developers, testers).
+       b. Roles and responsibilities of each stakeholder.
+    4. Current System Overview
+       a. Description of the existing system (if any).
+       b. Limitations or issues with the current system.
+       c. Reasons for transitioning to Odoo Studio.
+    5. Functional Requirements
+       a. Modules and Features:
+          List of Odoo modules to be customized or developed (e.g., CRM, Inventory, Accounting).
+       b. Customizations:
+          Specific requirements for customizing Odoo views, fields, and workflows.
+       c. Business Processes:
+          Detailed description of business workflows to be implemented.
+       d. Automation Rules:
+          Rules and triggers for automating tasks.
+       e. Approval Rules:
+          Details on approval workflows.
+    6. Non-Functional Requirements
+       a. Performance Requirements: Speed, response time, and scalability.
+       b. Security Requirements: Data protection, user roles, and access control.
+       c. Compliance Requirements: Industry standards or legal regulations to meet.
+       d. User Interface Requirements: UI/UX preferences, design consistency.
+    7. Data Requirements
+       a. Data Migration:
+       b. Information on existing data that needs to be migrated into Odoo.
+       c. Master Data Management:
+       d. List of master data entities (e.g., products, customers, vendors).
+       e. Integration Points:
+       f. External systems or APIs to be integrated.
+    8. Reporting and Analytics
+       a. Types of reports required (e.g., financial, inventory, sales).
+       b. Dashboard and KPI visualization requirements.
+       c. Export formats (PDF, Excel, etc.).
+
+odoo_models_modules_apps_task:
+  agent: odoo_studio_application_specialist
+  description: >
+    Models determine the logical structure of a database and how data is stored, organized, and manipulated. 
+    In other words, a model is a table of information that can be linked with other tables. 
+    A model usually represents a business concept, such as a sales order, contact, or product.
+    Modules and apps contain various elements, such as models, views, data files, web controllers, and static web data.
+    Your task is to evaluate the Business Requirements provided by the Business Requirements Analyst. 
+    Use this report to determine how Odoo Studio's existing models, modules and apps can be applied to meet the specified 
+    business needs.
+  expected_output: >
+    A report detailing the Odoo Studio's models, modules and apps that that will be required in our odoo studio implementation.
+
+odoo_view_task:
+  agent: odoo_studio_application_specialist
+  description: >
+    Views are the interface that allows displaying the data contained in a model. One model can have several views, 
+    which are simply different ways to show the same data. In Studio, views are organized into four categories: 
+    general, multiple records, timeline, and reporting.
+    Your task is to evaluate the Business Requirements Report provided by the Business Requirements Analyst. 
+    Use this report to determine how Odoo studio's existing views (total 20) can be applied to meet the specified 
+    business needs.
+  expected_output: >
+    A report detailing the Odoo studio's views that will be required in our odoo studio implementation.
+
+odoo_fields_and_widgets_task:
+  agent: odoo_studio_application_specialist
+  description: >
+    Fields structure the models of a database. If you picture a model as a table or spreadsheet, fields 
+    are the columns where data is stored in the records (i.e., the rows). Fields also define the type of 
+    data that is stored within them. How the data is presented and formatted on the UI is defined by their widget.
+    Your task is to evaluate the Business Requirements provided by the Business Requirements Analyst. 
+    Use this report to determine how Odoo studio's existing fields (both simple and relational fields) and widgets can be applied to meet the specified 
+    business needs.
+  expected_output: >
+    A report detailing the Odoo studio's fields and widgets that can fulfill each of the requirements.
+
+odoo_pdf_report_task:
+  agent: odoo_studio_application_specialist
+  description: >
+    Your task is to evaluate the Business Requirements Report provided by the Business Requirements Analyst. 
+    Use this report to determine how using Odoo studio's, you can edit existing PDF reports (e.g., invoices, 
+    quotations, etc.) or create new ones to meet the specified business needs.
+  expected_output: >
+    A report detailing the Odoo studio's PDF reports (e.g., invoices, quotations, etc.) that will 
+    be required to add while implementing the solution in Odoo Studio.
+
+odoo_automation_rules_task:
+  agent: odoo_studio_application_specialist
+  description: >
+    Automation rules are used to trigger automatic changes based on user actions (e.g., apply a modification 
+    when a field is set to a specific value), email events, time conditions (e.g., archive a record 7 days after 
+    its last update), or external events.
+    Your task is to evaluate the Business Requirements Report provided by the Business Requirements Analyst. 
+    Use this report to determine how Odoo studio's automation rules and triggers can be applied at 
+    different stages to meet the specified business needs.
+  expected_output: >
+    A report detailing the Odoo studio's automation rules and triggers that will be required to add while 
+    implementing the solution in Odoo Studio.
+
+odoo_approval_rules_task:
+  agent: odoo_studio_application_specialist
+  description: >
+    Studio approval rules allow you to require the approval of one or several users before an action can be performed using a button.
+    Your task is to evaluate the Business Requirements Report provided by the Business Requirements Analyst. 
+    Use this report to determine how Odoo studio's approval rules can be applied at different stages to 
+    meet the specified business needs.
+  expected_output: >
+    A report detailing the Odoo studio's spproval rules that will be required to add while 
+    implementing the solution in Odoo Studio.

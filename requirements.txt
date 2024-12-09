@@ -1,0 +1,65 @@
+Business Requirements for Enhanced Sales Order Workflow
+        1. Requirement Title: Improved Sales Order Workflow
+        Customer Story:
+        The sales team faces challenges in managing high-value sales orders due to manual approval processes, lack of real-time notifications, and limited visibility of order statuses. A system is needed to streamline approvals, provide notifications for status updates, and improve the tracking of orders.
+
+        Scenario:
+        Current Workflow:
+        Sales orders are manually created and sent to the manager for approval, resulting in delays and inefficiencies. There is no automated tracking system or structured dashboard to monitor the status of orders.
+        Proposed Workflow:
+        Introduce an automated approval system for high-value sales orders, enable real-time notifications for key updates, and provide a user-friendly interface to track orders by status and priority.
+        2. Features to Be Implemented
+        A. Automated Approval Workflow
+        Requirement:
+        Automate the approval process for sales orders exceeding a defined threshold (e.g., $10,000).
+        Automatically set the status to "Pending Approval."
+        Notify the designated approver (manager) of the pending approval request.
+        B. Dashboard for Sales Order Tracking
+        Requirement:
+        Provide a centralized dashboard for the sales team to:
+        View orders categorized by status: Pending Approval, Approved, Rejected, Invoiced.
+        Filter orders based on specific criteria, such as "High-Value Orders" or "Urgent Delivery."
+        C. Notification System
+        Requirement:
+        Ensure team members receive timely notifications for critical events:
+        When a sales order is approved or rejected.
+        When an invoice is created for a sales order.
+        D. Additional Fields for Sales Orders
+        Requirement:
+        Add fields to capture key information for better order management:
+        Customer Priority (Dropdown: Low, Medium, High).
+        Delivery Deadline (Date field).
+        Ensure these fields are mandatory for high-priority customers.
+        3. Reporting and Analytics
+        Requirement:
+        Generate detailed reports for analyzing sales performance. The reports should include:
+
+        Total sales amount by region and sales representative.
+        Count of orders by status (e.g., Pending Approval, Approved).
+        Average value of sales orders.
+        High-priority orders and their completion rate.
+        4. Role-Based Access Control
+        Requirement:
+        Restrict access to specific actions based on user roles:
+
+        Sales representatives can create and edit sales orders but cannot approve or reject them.
+        Managers have full access to approve or reject sales orders.
+        5. Integration with Other Systems
+        Requirement:
+        Ensure seamless integration with other key systems to streamline the workflow:
+
+        Inventory Management: Automatically reserve stock upon approval of a sales order.
+        Accounting: Generate invoices only for approved sales orders.
+        6. Test Cases
+        Test Case 1: Create a sales order exceeding $10,000 and verify that it triggers an approval request and updates the status to "Pending Approval."
+        Test Case 2: Check that only managers can approve or reject sales orders and that notifications are sent accordingly.
+        Test Case 3: Verify that inventory is reserved and invoices are generated only for approved orders.
+        Test Case 4: Ensure the dashboard accurately reflects orders by status and includes functional filters.
+        Test Case 5: Generate a sales performance report and validate its accuracy.
+        7. Deliverables
+        Enhanced sales order workflow with automation for approvals and notifications.
+        A visually intuitive dashboard for real-time tracking of order statuses.
+        Custom fields for capturing critical order information.
+        Comprehensive reports for performance analysis.
+        Role-based access control to secure the process.
+        Seamless integration with inventory and accounting systems.
