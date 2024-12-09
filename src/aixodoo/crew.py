@@ -37,42 +37,6 @@ class AixodooCrew():
 				max_tokens=10000,
 			)
 		)
-
-	# @agent
-	# def quality_assurance_specialist(self) -> Agent:
-	# 	return Agent(
-	# 		config=self.agents_config['quality_assurance_specialist'],
-	# 		verbose=True,
-	# 		llm='gpt-4o',
-	# 		allow_delegation=True	
-	# 	)
-	
-	# @agent
-	# def odoo_implementation_specialist(self) -> Agent:
-	# 	return Agent(
-	# 		config=self.agents_config['odoo_implementation_specialist'],
-	# 		verbose=True,
-	# 		llm='gpt-4o',
-	# 		allow_delegation=True
-	# 	)
-	
-	# @agent
-	# def odoo_docs_research_specialist(self) -> Agent:
-	# 	return Agent(
-	# 		config=self.agents_config['odoo_docs_research_specialist'],
-	# 		verbose=True,
-	# 		llm='gpt-4o',
-	# 		tools=[CodeDocsSearchTool()],
-	# 		allow_delegation=True
-	# 	)
-	
-	# @agent
-	# def report_writing_specialist(self) -> Agent:
-	# 	return Agent(
-	# 		config=self.agents_config['report_writing_specialist'],
-	# 		verbose=True,
-	# 		llm='gpt-4o',
-	# 	)
 	
 	@task
 	def requirement_analysis(self) -> Task:
@@ -123,33 +87,6 @@ class AixodooCrew():
 			context=[self.odoo_automation_rules_task()],
 			output_file='Odoo Approval Rules.md'
 		)
-
-	# @task
-	# def report_review_and_feedback(self) -> Task:
-	# 	return Task(
-	# 		config=self.tasks_config['report_review_and_feedback'],
-	# 	)
-
-	# @task
-	# def odoo_studio_implementation_task(self) -> Task:
-	# 	return Task(
-	# 		config=self.tasks_config['odoo_studio_implementation_task'],
-	# 		output_file='procedure-3.md'
-	# 	)
-	
-	# @task
-	# def odoo_docs_search_task(self) -> Task:
-	# 	return Task(
-	# 		config=self.tasks_config['odoo_docs_research_task'],
-	# 	)
-	
-	# @task
-	# def report_writing_task(self) -> Task:
-	# 	return Task(
-	# 		config=self.tasks_config['report_writing_task'],
-	# 		context=[self.requirement_analysis(),self.system_architecture_design()],
-	# 		output_file='report-4.md'
-	# 	)
 	
 	@crew
 	def crew(self) -> Crew:
