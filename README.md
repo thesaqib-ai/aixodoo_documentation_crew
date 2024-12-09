@@ -6,6 +6,12 @@ Welcome to the Aixodoo Crew project, powered by [crewAI](https://crewai.com). Th
 
 Ensure you have Python >=3.10 <=3.13 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
 
+You first have to clone the repository using:
+
+```bash
+git clone https://github.com/thesaqib-ai/aixodoo_documentation_crew.git
+```
+
 First, if you haven't already, install uv:
 
 ```bash
